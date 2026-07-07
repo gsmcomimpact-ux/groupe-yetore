@@ -6,15 +6,16 @@
   --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   
-  /* Brand colors matching excellence and leadership: Navy/Royal Blue and Warm Amber/Gold */
-  --color-yetore-blue-50: #f0f4fa;
-  --color-yetore-blue-100: #dbe5f3;
-  --color-yetore-blue-200: #bdcfeb;
-  --color-yetore-blue-500: #1e40af; /* Primary dark navy-royal */
-  --color-yetore-blue-600: #1d4ed8;
-  --color-yetore-blue-700: #1e40af;
-  --color-yetore-blue-800: #1e3a8a;
-  --color-yetore-blue-900: #0f172a; /* Deep navy Slate */
+  /* Brand colors matching excellence and leadership: Changed to Deep Forest / Emerald Green */
+  --color-yetore-blue-50: #f0fdf4;
+  --color-yetore-blue-100: #dcfce7;
+  --color-yetore-blue-200: #bbf7d0;
+  --color-yetore-blue-500: #15803d; /* Primary dark forest-green */
+  --color-yetore-blue-600: #166534;
+  --color-yetore-blue-700: #14532d;
+  --color-yetore-blue-800: #14532d;
+  --color-yetore-blue-900: #052e16; /* Deep forest slate */
+  --color-yetore-blue-950: #021a0c;
 
   --color-yetore-gold-50: #fefbeb;
   --color-yetore-gold-100: #fef3c7;
