@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Brand colors matching excellence and leadership: Navy/Royal Blue and Warm Amber/Gold */
+  --color-yetore-blue-50: #f0f4fa;
+  --color-yetore-blue-100: #dbe5f3;
+  --color-yetore-blue-200: #bdcfeb;
+  --color-yetore-blue-500: #1e40af; /* Primary dark navy-royal */
+  --color-yetore-blue-600: #1d4ed8;
+  --color-yetore-blue-700: #1e40af;
+  --color-yetore-blue-800: #1e3a8a;
+  --color-yetore-blue-900: #0f172a; /* Deep navy Slate */
+
+  --color-yetore-gold-50: #fefbeb;
+  --color-yetore-gold-100: #fef3c7;
+  --color-yetore-gold-500: #d97706; /* Secondary premium amber-gold */
+  --color-yetore-gold-600: #b45309;
+  --color-yetore-gold-700: #78350f;
+  
+  --color-yetore-emerald-500: #059669;
+  --color-yetore-emerald-600: #047857;
+}
+
+/* Custom animation-related base utility classes if needed */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-yetore-blue-800) 0%, var(--color-yetore-blue-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, var(--color-yetore-gold-500) 0%, var(--color-yetore-gold-700) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Groupe Yétoré",
+  "description": "Portail officiel du Groupe Yétoré à Niamey Rive Droite (Niger) : Complexe Scolaire d'excellence (maternelle, primaire, collège, lycée), Transit international et Assurances.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
