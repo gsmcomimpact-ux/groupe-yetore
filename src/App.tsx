@@ -93,7 +93,7 @@ export default function App() {
                   <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center gap-2 text-xs">
                     <span className="bg-yetore-gold-500 text-white font-extrabold px-2.5 py-0.5 rounded uppercase tracking-wider font-mono shrink-0 flex items-center gap-1">
                       <Sparkles className="w-3.5 h-3.5" />
-                      Rentré Académique 2026-2027
+                      Rentrée Académique 2026-2027
                     </span>
                     <p className="font-semibold leading-relaxed">
                       Inscriptions ouvertes au CSP YETTORE (Maternelle, Primaire, Collège, Lycée) à la Rive Droite de Niamey. Réservez une place en ligne dès aujourd'hui !
