@@ -103,6 +103,79 @@ export default function AboutSection() {
           </div>
         </div>
 
+        {/* Timeline Historique */}
+        <div className="my-20 pt-16 border-t border-gray-100">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-yetore-blue-900">Notre Historique</h3>
+            <p className="text-xs sm:text-sm text-gray-500 mt-2">
+              Une décennie de croissance continue, d'engagement local et de diversification au service du Niger.
+            </p>
+          </div>
+
+          <div className="relative max-w-4xl mx-auto">
+            {/* Connecting Line */}
+            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-yetore-blue-800 to-yetore-gold-500 -translate-x-1/2 hidden md:block" />
+            <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-yetore-blue-800 to-yetore-gold-500 md:hidden" />
+
+            <div className="space-y-12">
+              {/* Timeline Item 2014 */}
+              <div className="relative flex flex-col md:flex-row items-start md:justify-between group">
+                <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-white border-4 border-yetore-blue-800 rounded-full -translate-x-1/2 top-1.5 z-10 group-hover:scale-125 transition-transform" />
+                
+                <div className="w-full md:w-[45%] pl-10 md:pl-0 md:text-right space-y-2">
+                  <span className="inline-block px-3 py-1 bg-yetore-blue-50 text-yetore-blue-800 text-xs font-black rounded-full font-mono">
+                    2014
+                  </span>
+                  <h4 className="font-display font-bold text-sm text-yetore-blue-950">
+                    Création de la branche Transit & Logistique
+                  </h4>
+                  <p className="text-xs text-gray-500 leading-relaxed">
+                    Lancement de nos activités de dédouanement et de logistique internationale. Le Groupe Yétoré s'impose rapidement comme un acteur de confiance à Niamey pour sécuriser les flux de marchandises à l'import-export.
+                  </p>
+                </div>
+                <div className="hidden md:block w-[45%]" />
+              </div>
+
+              {/* Timeline Item 2018 */}
+              <div className="relative flex flex-col md:flex-row-reverse items-start md:justify-between group">
+                <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-white border-4 border-yetore-gold-500 rounded-full -translate-x-1/2 top-1.5 z-10 group-hover:scale-125 transition-transform" />
+                
+                <div className="w-full md:w-[45%] pl-10 md:pl-0 md:text-left space-y-2">
+                  <span className="inline-block px-3 py-1 bg-yetore-gold-50 text-yetore-gold-600 text-xs font-black rounded-full font-mono">
+                    2018
+                  </span>
+                  <h4 className="font-display font-bold text-sm text-yetore-blue-950">
+                    Création de la branche Assurance & Conseil
+                  </h4>
+                  <p className="text-xs text-gray-500 leading-relaxed">
+                    Diversification stratégique avec l'ouverture de notre cabinet de courtage en assurances. Une présence directe sur la Rive Droite pour accompagner de près les familles et les entreprises du Niger dans la gestion de leurs risques.
+                  </p>
+                </div>
+                <div className="hidden md:block w-[45%]" />
+              </div>
+
+              {/* Timeline Item 2022 */}
+              <div className="relative flex flex-col md:flex-row items-start md:justify-between group">
+                <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-white border-4 border-yetore-blue-900 rounded-full -translate-x-1/2 top-1.5 z-10 group-hover:scale-125 transition-transform" />
+                
+                <div className="w-full md:w-[45%] pl-10 md:pl-0 md:text-right space-y-2">
+                  <span className="inline-block px-3 py-1 bg-yetore-blue-950 text-white text-xs font-black rounded-full font-mono">
+                    2022
+                  </span>
+                  <h4 className="font-display font-bold text-sm text-yetore-blue-950">
+                    Création du Complexe Scolaire Privé CSP YETTORE
+                  </h4>
+                  <p className="text-xs text-gray-500 leading-relaxed">
+                    Inauguration de notre campus scolaire d'élite bilingue sur la Rive Droite de Niamey. Une offre éducative d'excellence de la maternelle au lycée scientifique, alliant rigueur pédagogique, transport scolaire et éducation citoyenne.
+                  </p>
+                </div>
+                <div className="hidden md:block w-[45%]" />
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         {/* Corporate Core Values Cards */}
         <div className="pt-10 border-t border-gray-100">
           <div className="text-center max-w-2xl mx-auto mb-10">
