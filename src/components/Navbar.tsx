@@ -40,8 +40,8 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
 
   const navItems = [
     { id: 'home' as SectionType, label: 'Accueil', icon: Building },
-    { id: 'scolaire' as SectionType, label: 'Complexe Scolaire', icon: GraduationCap, highlight: true },
-    { id: 'transit' as SectionType, label: 'Transit & Logistique', icon: Truck },
+    { id: 'transit' as SectionType, label: 'Transit & Logistique', icon: Truck, highlight: true },
+    { id: 'scolaire' as SectionType, label: 'CSP YETTORE', icon: GraduationCap },
     { id: 'assurances' as SectionType, label: 'Assurances', icon: ShieldCheck },
     { id: 'propos' as SectionType, label: 'À Propos', icon: Info },
     { id: 'contact' as SectionType, label: 'Contact', icon: Phone },
@@ -141,7 +141,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
               className="px-3.5 py-1.5 rounded-lg bg-yetore-blue-800 text-white text-xs font-bold shadow-sm flex items-center gap-1"
             >
               <GraduationCap className="w-3.5 h-3.5" />
-              Scolaire
+              CSP YETTORE
             </button>
             <button
               id="mobile-menu-toggle"
@@ -212,7 +212,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
                   📍 Niamey, Niger
                 </p>
                 <p className="text-[11px] text-yetore-blue-800 font-bold mt-1">
-                  📞 Scolaire : +227 96 82 06 12
+                  📞 CSP YETTORE : +227 96 82 06 12
                 </p>
                 <p className="text-[11px] text-yetore-blue-800 font-bold mt-0.5">
                   📞 Transit : +227 20 31 57 85

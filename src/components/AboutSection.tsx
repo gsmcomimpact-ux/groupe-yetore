@@ -11,9 +11,10 @@ import {
   Eye, 
   Award, 
   CheckCircle,
-  TrendingUp,
   MapPin
 } from 'lucide-react';
+
+import directorImg from '../assets/images/yetore_director_photo_1783443010142.jpg';
 
 export default function AboutSection() {
   const coreValues = [
@@ -34,29 +35,6 @@ export default function AboutSection() {
     }
   ];
 
-  const milestones = [
-    {
-      year: '2018',
-      title: 'Fondation du Transit Yétoré',
-      description: 'Lancement de l’agence de transit d’origine routière et maritime pour faciliter l’import-export de biens stratégiques pour le Niger.'
-    },
-    {
-      year: '2021',
-      title: 'Création de la branche Assurance',
-      description: 'Pour offrir une protection intégrale aux conteneurs de transit et s’étendre aux familles de Niamey avec des formules Auto et Santé.'
-    },
-    {
-      year: '2024',
-      title: 'Inauguration du Complexe Scolaire d’Élite',
-      description: 'Ouverture du campus moderne de la Rive Droite (Maternelle, Primaire et Collège) pour répondre à la demande d’une éducation bilingue d’excellence.'
-    },
-    {
-      year: '2026',
-      title: 'Extension au Lycée Scientifique',
-      description: 'Inauguration des classes de Seconde, Première et Terminale S (C et D) équipées de laboratoires scientifiques haut de gamme.'
-    }
-  ];
-
   return (
     <section id="about-portal" className="bg-white py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,7 +50,7 @@ export default function AboutSection() {
               Un Engagement Global pour le Développement du Niger
             </h2>
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-              Le <strong>Groupe Yétoré</strong>, fondé par <strong>M. AMADOU SOUMANA</strong>, est né d'une volonté simple : bâtir un écosystème de services de premier plan sur la <strong>Rive Droite de Niamey</strong>. Convaincus que le développement socioéconomique d’un pays repose sur deux piliers — une éducation de classe mondiale pour sa jeunesse et des flux logistiques performants pour ses entreprises — le fondateur a réuni sous un même label le Complexe Scolaire d’excellence, l'agence agréée de transit, et le cabinet de conseil en assurances.
+              Le <strong>Groupe Yétoré</strong>, fondé par <strong>M. AMADOU SOUMANA</strong>, est né d'une volonté simple : bâtir un écosystème de services de premier plan sur la <strong>Rive Droite de Niamey</strong>. Convaincus que le développement socioéconomique d’un pays repose sur deux piliers — une éducation de classe mondiale pour sa jeunesse et des flux logistiques performants pour ses entreprises — le fondateur a réuni sous un même label le CSP YETTORE d’excellence, l'agence agréée de transit, et le cabinet de conseil en assurances.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -98,32 +76,29 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Timeline Milestones */}
-          <div className="bg-slate-50 p-6 sm:p-10 rounded-3xl border border-gray-100">
-            <h3 className="font-display font-extrabold text-lg text-yetore-blue-950 mb-8 flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-yetore-gold-500" />
-              L'Évolution du Groupe Yétoré
-            </h3>
-
-            <div className="relative border-l border-gray-200 ml-3 pl-6 space-y-8">
-              {milestones.map((stone, idx) => (
-                <div key={idx} className="relative">
-                  {/* Indicator bullet */}
-                  <span className="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-yetore-blue-800 border-2 border-white flex items-center justify-center text-[8px] font-bold text-white shadow-sm" />
-                  
-                  <div className="space-y-1">
-                    <span className="font-mono text-xs font-extrabold text-yetore-gold-600 block leading-none">
-                      {stone.year}
-                    </span>
-                    <h4 className="text-xs font-bold text-yetore-blue-950">
-                      {stone.title}
-                    </h4>
-                    <p className="text-[11px] text-gray-500 leading-relaxed">
-                      {stone.description}
-                    </p>
-                  </div>
+          {/* Director Showcase */}
+          <div className="space-y-6 lg:pl-4">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[3/4] max-w-sm mx-auto lg:mx-0">
+              <img 
+                src={directorImg} 
+                alt="M. AMADOU SOUMANA - Directeur Général du Groupe Yétoré" 
+                className="w-full h-full object-cover object-top"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-yetore-blue-950/90 via-yetore-blue-950/20 to-transparent flex items-end p-6">
+                <div className="text-white space-y-1">
+                  <span className="px-2.5 py-0.5 rounded-full bg-yetore-gold-500 text-[9px] font-extrabold uppercase tracking-widest text-yetore-blue-950">Fondateur & DG</span>
+                  <h3 className="font-display font-black text-lg sm:text-xl text-white">M. AMADOU SOUMANA</h3>
+                  <p className="text-[11px] text-yetore-blue-100 font-medium">Directeur Général du Groupe Yétoré</p>
                 </div>
-              ))}
+              </div>
+            </div>
+            
+            <div className="bg-yetore-blue-50/50 p-6 rounded-2xl border border-yetore-blue-100/50 relative max-w-sm mx-auto lg:mx-0">
+              <span className="absolute -top-3 left-6 px-3 py-1 rounded-full bg-yetore-blue-800 text-white text-[9px] font-bold uppercase tracking-wider">Le Mot du Directeur</span>
+              <p className="text-xs text-gray-600 italic leading-relaxed pt-2">
+                "Notre engagement au sein du Groupe Yétoré repose sur une exigence d'intégrité et de rigueur absolue. Que ce soit pour former les leaders de demain dans notre école CSP YETTORE ou pour orchestrer vos flux de transit à travers le continent, notre priorité absolue reste votre réussite et la satisfaction de nos engagements envers le Niger."
+              </p>
             </div>
           </div>
         </div>

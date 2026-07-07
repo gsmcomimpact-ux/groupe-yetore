@@ -18,6 +18,7 @@ import {
   FileCheck, 
   HelpCircle, 
   Send,
+  MessageSquare,
   Calculator,
   ChevronRight,
   ShieldCheck,
@@ -159,6 +160,33 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
     const randomId = 'YET-' + Math.floor(100000 + Math.random() * 900000);
     setGeneratedId(randomId);
     setIsSubmitted(true);
+
+    // Redirect to WhatsApp automatically
+    const studentName = `${formState.studentFirstName} ${formState.studentLastName}`;
+    const level = levelLabels[formState.targetLevel] || formState.targetLevel;
+    
+    const messageText = `Bonjour, je viens d'effectuer une pré-inscription en ligne pour mon enfant sur le site de l'école CSP YETTORE.
+
+📝 *Détails de l'inscription* :
+• *N° Dossier* : ${randomId}
+• *Élève* : ${studentName}
+• *Date de naissance* : ${formState.birthDate}
+• *Niveau demandé* : ${level}
+• *Établissement précédent* : ${formState.previousSchool || 'N/A'}
+
+👤 *Informations Parent* :
+• *Parent/Tuteur* : ${formState.parentName}
+• *Téléphone* : ${formState.parentPhone}
+• *Email* : ${formState.parentEmail}
+
+💬 *Message/Observations* :
+${formState.message || 'Aucune observation.'}
+
+Je me présenterai à l'école pour finaliser les autres démarches d'inscription. Merci de confirmer la réception de mon dossier préliminaire.`;
+
+    const encodedText = encodeURIComponent(messageText);
+    const whatsappUrl = `https://wa.me/22796820612?text=${encodedText}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const resetForm = () => {
@@ -210,13 +238,13 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yetore-blue-100 text-yetore-blue-800 text-xs font-bold uppercase tracking-wider mb-4">
             <GraduationCap className="w-4 h-4 text-yetore-gold-500" />
-            COMPLEXE SCOLAIRE PRIVÉ YÉTORÉ
+            CSP YETTORE
           </div>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-yetore-blue-900 leading-tight mb-4">
             Former les Générations de Demain sur la <span className="text-transparent bg-clip-text bg-gradient-to-r from-yetore-blue-800 to-yetore-gold-600">Rive Droite</span> de Niamey
           </h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            Le Complexe Scolaire Privé Yétoré offre un cadre académique exceptionnel, combinant rigueur scientifique, bilinguisme précoce et éducation civique, pour guider vos enfants de la petite enfance vers l'élite universitaire.
+            L'école CSP YETTORE offre un cadre académique exceptionnel, combinant rigueur scientifique, bilinguisme précoce et éducation civique, pour guider vos enfants de la petite enfance vers l'élite universitaire.
           </p>
         </div>
 
@@ -498,7 +526,7 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
                 Proposez-vous des réductions de frais pour plusieurs enfants ?
               </h4>
               <p className="text-xs text-gray-600 leading-relaxed">
-                Oui. Le Complexe Scolaire Privé Yétoré applique une politique de solidarité familiale : réduction de <strong>10%</strong> sur la scolarité du 2ème enfant inscrit, et <strong>15%</strong> à partir du 3ème enfant.
+                Oui. L'établissement CSP YETTORE applique une politique de solidarité familiale : réduction de <strong>10%</strong> sur la scolarité du 2ème enfant inscrit, et <strong>15%</strong> à partir du 3ème enfant.
               </p>
             </div>
 
@@ -531,7 +559,7 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
                   <GraduationCap className="w-6 h-6 text-yetore-gold-500" />
                   <div>
                     <h3 className="font-display font-bold text-base sm:text-lg">Portail d'Inscription en Ligne</h3>
-                    <p className="text-[11px] text-yetore-blue-200">Complexe Scolaire Privé Yétoré - Session 2026-2027</p>
+                    <p className="text-[11px] text-yetore-blue-200">CSP YETTORE - Session 2026-2027</p>
                   </div>
                 </div>
                 <button 
@@ -548,24 +576,12 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
                 {!isSubmitted ? (
                   <form onSubmit={handleFormSubmit} className="space-y-5" id="school-inscription-form">
                     <div className="bg-yetore-blue-50 p-4 rounded-xl border border-yetore-blue-100 flex items-start gap-3">
-                      <Calculator className="w-5 h-5 text-yetore-blue-800 shrink-0 mt-0.5" />
+                      <FileCheck className="w-5 h-5 text-yetore-blue-800 shrink-0 mt-0.5" />
                       <div>
-                        <h4 className="text-xs font-extrabold text-yetore-blue-950 uppercase tracking-wide">Simulation de Budget en Temps Réel</h4>
-                        <p className="text-[11px] text-gray-500 mt-0.5">Sélectionnez le cycle ci-dessous pour voir l'estimation des frais applicables.</p>
-                        <div className="grid grid-cols-3 gap-2 mt-2 pt-2 border-t border-yetore-blue-100 text-[11px]">
-                          <div>
-                            <span className="text-gray-400 block">Droit Inscription :</span>
-                            <span className="font-bold text-yetore-blue-950">{currentFees.registration}</span>
-                          </div>
-                          <div>
-                            <span className="text-gray-400 block">Scolarité Annuelle :</span>
-                            <span className="font-bold text-yetore-blue-950">{currentFees.tuition}</span>
-                          </div>
-                          <div>
-                            <span className="text-gray-400 block">Livres & Uniforme :</span>
-                            <span className="font-bold text-yetore-blue-950">{currentFees.books}</span>
-                          </div>
-                        </div>
+                        <h4 className="text-xs font-extrabold text-yetore-blue-950 uppercase tracking-wide">Démarches administratives simplifiées</h4>
+                        <p className="text-[11px] text-gray-500 mt-0.5 leading-relaxed">
+                          Cette pré-inscription en ligne réserve une place préliminaire pour votre enfant. Les parents devront ensuite se présenter directement au secrétariat de l'école pour finaliser l'inscription physique et obtenir toutes les informations relatives à la scolarité.
+                        </p>
                       </div>
                     </div>
 
@@ -747,7 +763,7 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
                           <strong>Cycle d'entrée :</strong> <span className="capitalize font-bold">{levelLabels[formState.targetLevel]}</span>
                         </div>
                         <div>
-                          <strong>Frais scolaires simulés :</strong> Sc.: {currentFees.tuition} | Insc.: {currentFees.registration}
+                          <strong>Prochaine étape :</strong> Présentation physique à l'école
                         </div>
                       </div>
 
@@ -757,9 +773,48 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
                           Prochaine étape physique
                         </h4>
                         <p className="text-[11px] text-gray-500 mt-1 leading-relaxed">
-                          Présentez-vous au secrétariat du campus Yétoré (Rive Droite Niamey) muni du numéro de dossier <strong>{generatedId}</strong> et des pièces justificatives sous 10 jours pour confirmer définitivement l'inscription.
+                          Présentez-vous au secrétariat du campus CSP YETTORE (Rive Droite Niamey) muni du numéro de dossier <strong>{generatedId}</strong> et des pièces justificatives pour finaliser les autres démarches et l'inscription définitive.
                         </p>
                       </div>
+                    </div>
+
+                    {/* WhatsApp notification link */}
+                    <div className="bg-emerald-50 p-5 rounded-2xl border border-emerald-200 max-w-md mx-auto text-center space-y-3">
+                      <div className="flex items-center justify-center gap-1.5 text-emerald-800 font-extrabold text-xs uppercase font-mono">
+                        <MessageSquare className="w-4 h-4 text-emerald-600 shrink-0" />
+                        Transmettre le dossier par WhatsApp
+                      </div>
+                      <p className="text-[11px] text-emerald-700 leading-relaxed">
+                        Pour un traitement immédiat et prioritaire par le service d'admission, veuillez cliquer ci-dessous pour envoyer la fiche de pré-inscription par message WhatsApp.
+                      </p>
+                      <a
+                        href={`https://wa.me/22796820612?text=${encodeURIComponent(
+                          `Bonjour, je viens d'effectuer une pré-inscription en ligne pour mon enfant sur le site de l'école CSP YETTORE.
+
+📝 *Détails de l'inscription* :
+• *N° Dossier* : ${generatedId}
+• *Élève* : ${formState.studentFirstName} ${formState.studentLastName}
+• *Date de naissance* : ${formState.birthDate}
+• *Niveau demandé* : ${levelLabels[formState.targetLevel] || formState.targetLevel}
+• *Établissement précédent* : ${formState.previousSchool || 'N/A'}
+
+👤 *Informations Parent* :
+• *Parent/Tuteur* : ${formState.parentName}
+• *Téléphone* : ${formState.parentPhone}
+• *Email* : ${formState.parentEmail}
+
+💬 *Message/Observations* :
+${formState.message || 'Aucune observation.'}
+
+Je me présenterai à l'école pour finaliser les autres démarches d'inscription. Merci de confirmer la réception de mon dossier préliminaire.`
+                        )}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition-all cursor-pointer"
+                      >
+                        <MessageSquare className="w-4 h-4" />
+                        Envoyer au +227 96 82 06 12
+                      </a>
                     </div>
 
                     <div className="flex justify-center gap-3">

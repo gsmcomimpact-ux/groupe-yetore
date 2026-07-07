@@ -121,7 +121,7 @@ export default function ContactSection() {
                   <div className="space-y-3">
                     <div className="flex items-center gap-2 text-yetore-blue-950 font-bold border-l-4 border-yetore-blue-800 pl-2">
                       <GraduationCap className="w-4 h-4 text-yetore-gold-500" />
-                      <span>COMPLEXE SCOLAIRE PRIVÉ YÉTORÉ</span>
+                      <span>CSP YETTORE</span>
                     </div>
                     
                     <div className="space-y-2 pl-3">

@@ -147,7 +147,7 @@ export default function TransitSection({ transitImage }: TransitSectionProps) {
           <div className="lg:col-span-7 space-y-5">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yetore-gold-100 text-yetore-gold-800 text-xs font-bold uppercase tracking-wider">
               <Truck className="w-4 h-4 text-yetore-blue-800" />
-              YÉTORÉ TRANSIT & LOGISTIQUE
+              YETORE TRANSIT-LOGISTIQUE
             </div>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-yetore-blue-900 leading-tight">
               Connecter le Niger aux Corridors Maritimes et Globaux

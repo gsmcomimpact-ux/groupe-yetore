@@ -75,20 +75,20 @@ export default function Footer({ setActiveSection }: FooterProps) {
             <ul className="space-y-2.5 text-xs text-yetore-blue-200 font-medium">
               <li>
                 <button 
-                  onClick={() => handleLinkClick('scolaire')} 
-                  className="hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer text-left"
-                >
-                  <ChevronRight className="w-3.5 h-3.5 text-yetore-gold-500" />
-                  Complexe Scolaire Privé Yétoré
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => handleLinkClick('transit')} 
                   className="hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer text-left"
                 >
                   <ChevronRight className="w-3.5 h-3.5 text-yetore-gold-500" />
-                  Yétoré Transit & Logistique
+                  YETORE TRANSIT-LOGISTIQUE
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => handleLinkClick('scolaire')} 
+                  className="hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer text-left"
+                >
+                  <ChevronRight className="w-3.5 h-3.5 text-yetore-gold-500" />
+                  Complexe Scolaire CSP YETTORE
                 </button>
               </li>
               <li>
@@ -120,7 +120,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
             <div className="space-y-4 text-xs text-yetore-blue-200">
               {/* Ecole info */}
               <div className="space-y-1">
-                <span className="text-[10px] font-extrabold uppercase tracking-wider text-white block">Complexe Scolaire Privé Yétoré</span>
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-white block">CSP YETTORE</span>
                 <div className="flex items-start gap-2 text-yetore-blue-200 text-[11px]">
                   <MapPin className="w-3.5 h-3.5 text-yetore-gold-500 shrink-0 mt-0.5" />
                   <span>Koutéré, Plateau, Niamey, Niger</span>

@@ -45,7 +45,7 @@ export default function App() {
     {
       name: "Elhadj Soumana Oumarou",
       role: "Parent d'élèves (Lamordé)",
-      comment: "Inscrire mes deux enfants au Complexe Scolaire Privé Yétoré est le meilleur choix que j'ai fait. Le programme bilingue est d'une grande rigueur, et le service de minibus climatisés évite à nos enfants la fatigue du trajet quotidien à travers le fleuve.",
+      comment: "Inscrire mes deux enfants au CSP YETTORE est le meilleur choix que j'ai fait. Le programme bilingue est d'une grande rigueur, et le service de minibus climatisés évite à nos enfants la fatigue du trajet quotidien à travers le fleuve.",
       stars: 5
     },
     {
@@ -96,7 +96,7 @@ export default function App() {
                       Rentré Académique 2026-2027
                     </span>
                     <p className="font-semibold leading-relaxed">
-                      Inscriptions ouvertes au Complexe Scolaire Privé Yétoré (Maternelle, Primaire, Collège, Lycée) à la Rive Droite de Niamey. Réservez une place en ligne dès aujourd'hui !
+                      Inscriptions ouvertes au CSP YETTORE (Maternelle, Primaire, Collège, Lycée) à la Rive Droite de Niamey. Réservez une place en ligne dès aujourd'hui !
                     </p>
                   </div>
                   <button 
@@ -109,7 +109,7 @@ export default function App() {
                 </div>
               )}
 
-              {/* Main Immersive Hero Banner - Strongly promoting the Groupe Scolaire while showing corporate divisions */}
+              {/* Main Immersive Hero Banner - Strongly promoting the Transit & Logistique division while showing corporate divisions */}
               <section className="relative overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-32 bg-white">
                 <div className="absolute top-0 right-0 w-1/3 h-full bg-yetore-blue-50/40 rounded-l-[100px] -z-10 hidden lg:block" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -117,42 +117,38 @@ export default function App() {
                   {/* Hero Left Content */}
                   <div className="lg:col-span-6 space-y-6 text-left">
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yetore-gold-50 text-yetore-gold-700 text-xs font-bold uppercase tracking-wide">
-                      <GraduationCap className="w-4 h-4 text-yetore-blue-800" />
-                      Groupe Scolaire mis à l'honneur
+                      <Truck className="w-4 h-4 text-yetore-blue-800" />
+                      Division Transit & Logistique à l'honneur
                     </div>
                     
                     <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-yetore-blue-900 leading-tight">
-                      L'excellence académique à la <span className="text-transparent bg-clip-text bg-gradient-to-r from-yetore-blue-800 to-yetore-gold-600">Rive Droite</span> de Niamey
+                      Le transit agréé & la logistique d'excellence au <span className="text-transparent bg-clip-text bg-gradient-to-r from-yetore-blue-800 to-yetore-gold-600">Niger</span>
                     </h1>
                     
                     <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-xl">
-                      Bienvenue sur le portail officiel du <strong>Groupe Yétoré</strong>. Notre complexe d'élite accompagne vos enfants de la maternelle au baccalauréat bilingue, tandis que nos divisions agréées de <strong>Transit</strong> et d'<strong>Assurances</strong> facilitent vos opérations commerciales et protègent vos biens.
+                      Bienvenue sur le portail officiel du <strong>Groupe Yétoré</strong>. Notre division agréée de <strong>Transit & Logistique</strong> sécurise vos opérations d'import-export et d'assurance, tandis que notre <strong>CSP YETTORE</strong> d'élite accompagne vos enfants de la maternelle au baccalauréat.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-3 pt-2">
                       <button
-                        onClick={() => handleCTA('scolaire')}
+                        onClick={() => handleCTA('transit')}
                         className="px-6 py-3.5 rounded-xl bg-yetore-blue-800 hover:bg-yetore-blue-900 text-white font-bold text-xs shadow-md hover:scale-105 transition-all flex items-center justify-center gap-2 cursor-pointer"
-                        id="hero-scolaire-cta"
+                        id="hero-transit-cta"
                       >
-                        🏫 Visiter le Complexe Scolaire
+                        🚚 Accéder au Transit & Logistique
                         <ArrowRight className="w-4 h-4" />
                       </button>
                       <button
-                        onClick={() => handleCTA('contact')}
+                        onClick={() => handleCTA('scolaire')}
                         className="px-6 py-3.5 rounded-xl border border-gray-200 text-gray-700 font-bold text-xs hover:bg-slate-50 flex items-center justify-center gap-2 cursor-pointer"
-                        id="hero-contact-cta"
+                        id="hero-scolaire-cta"
                       >
-                        📞 Nous Contacter
+                        🏫 CSP YETTORE
                       </button>
                     </div>
 
                     {/* Compact Badges/Key Metrics */}
                     <div className="pt-6 border-t border-gray-100 flex flex-wrap gap-x-6 gap-y-3 text-xs text-gray-500 font-medium">
-                      <div className="flex items-center gap-1.5">
-                        <CheckCircle className="w-4.5 h-4.5 text-yetore-emerald-600" />
-                        <span>Maternelle, Primaire, Collège, Lycée</span>
-                      </div>
                       <div className="flex items-center gap-1.5">
                         <CheckCircle className="w-4.5 h-4.5 text-yetore-emerald-600" />
                         <span>Transit & Douanes Agréées</span>
@@ -161,23 +157,27 @@ export default function App() {
                         <CheckCircle className="w-4.5 h-4.5 text-yetore-emerald-600" />
                         <span>Assurances & Courtage Local</span>
                       </div>
+                      <div className="flex items-center gap-1.5">
+                        <CheckCircle className="w-4.5 h-4.5 text-yetore-emerald-600" />
+                        <span>CSP YETTORE Maternelle-Lycée</span>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Hero Right Visual Column - Custom Showcase of the School */}
+                  {/* Hero Right Visual Column - Custom Showcase of Transit */}
                   <div className="lg:col-span-6 relative">
                     <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-video lg:aspect-4/3">
                       <img 
-                        src={schoolHero} 
-                        alt="Complexe Scolaire Groupe Yétoré Niamey Rive Droite" 
+                        src={transitImg} 
+                        alt="Yétoré Transit & Logistique Niamey" 
                         className="w-full h-full object-cover"
                         referrerPolicy="no-referrer"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-yetore-blue-950/70 via-transparent to-transparent flex items-end p-6">
                         <div className="text-white space-y-1">
-                          <span className="px-2 py-0.5 rounded bg-yetore-gold-500 text-[10px] font-bold uppercase tracking-wider">Niamey Rive Droite</span>
-                          <h3 className="font-display font-bold text-base sm:text-lg">Complexe Scolaire d'Excellence</h3>
-                          <p className="text-[11px] text-gray-200">Un espace spacieux, ventilé et propice aux études d'élite.</p>
+                          <span className="px-2 py-0.5 rounded bg-yetore-gold-500 text-[10px] font-bold uppercase tracking-wider">Niamey, Niger</span>
+                          <h3 className="font-display font-black text-base sm:text-lg tracking-wider text-yetore-gold-400">YETORE TRANSIT-LOGISTIQUE</h3>
+                          <p className="text-[11px] text-gray-200">Commissionnaire agréé en douanes pour des opérations fluides et réglementées.</p>
                         </div>
                       </div>
                     </div>
@@ -185,11 +185,11 @@ export default function App() {
                     {/* Floating Info Badge */}
                     <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-2xl shadow-lg border border-gray-100 flex items-center gap-3 max-w-xs animate-bounce" style={{ animationDuration: '4s' }}>
                       <div className="w-10 h-10 rounded-xl bg-yetore-gold-100 text-yetore-gold-700 flex items-center justify-center font-bold">
-                        98%
+                        100%
                       </div>
                       <div>
-                        <h4 className="text-xs font-bold text-yetore-blue-950">Taux de réussite BAC</h4>
-                        <p className="text-[10px] text-gray-400">Mention excellence scientifique</p>
+                        <h4 className="text-xs font-bold text-yetore-blue-950">Sécurisé & Réglementé</h4>
+                        <p className="text-[10px] text-gray-400">Suivi en temps réel des corridors</p>
                       </div>
                     </div>
                   </div>
@@ -209,7 +209,7 @@ export default function App() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                  {/* School Division Card (Highlighted) */}
+                  {/* Transit Division Card (Highlighted) */}
                   <div className="bg-white rounded-3xl p-6 sm:p-8 border-2 border-yetore-blue-800 shadow-md hover:shadow-xl transition-all relative overflow-hidden flex flex-col justify-between">
                     <span className="absolute -top-1 -right-1 bg-yetore-gold-500 text-white font-extrabold text-[9px] uppercase px-3 py-1 rounded-bl-xl tracking-wider">
                       Prioritaire / À l'honneur
@@ -217,42 +217,10 @@ export default function App() {
                     
                     <div className="space-y-4">
                       <div className="p-3.5 bg-yetore-blue-50 text-yetore-blue-800 rounded-2xl inline-block">
-                        <GraduationCap className="w-8 h-8 text-yetore-gold-500" />
+                        <Truck className="w-8 h-8 text-yetore-gold-500" />
                       </div>
-                      <h3 className="font-display font-black text-lg text-yetore-blue-950">
-                        Complexe Scolaire Privé Yétoré
-                      </h3>
-                      <p className="text-xs text-gray-600 leading-relaxed">
-                        Maternelle, Primaire, Collège et Lycée Scientifique. Un cadre d'enseignement moderne offrant un programme bilingue (français/anglais), de l’initiation informatique (coding) et une cantine saine.
-                      </p>
-                      
-                      <ul className="space-y-1.5 pt-2 text-[11px] text-gray-500 font-medium">
-                        <li className="flex items-center gap-1.5">✓ Taux de succès remarquable (98% BAC, 100% BEPC)</li>
-                        <li className="flex items-center gap-1.5">✓ Transport par bus climatisés sur la Rive Droite</li>
-                        <li className="flex items-center gap-1.5">✓ Activités extra-scolaires (Coding, Échecs, Sports)</li>
-                      </ul>
-                    </div>
-
-                    <div className="pt-6 border-t border-gray-100 mt-6">
-                      <button
-                        onClick={() => handleCTA('scolaire')}
-                        className="w-full py-3 rounded-xl bg-yetore-blue-800 hover:bg-yetore-blue-900 text-white text-xs font-bold shadow-md flex items-center justify-center gap-1.5 cursor-pointer"
-                        id="portal-scolaire-btn"
-                      >
-                        Accéder au Portail Scolaire
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Transit Division Card */}
-                  <div className="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-                    <div className="space-y-4">
-                      <div className="p-3.5 bg-slate-100 text-gray-700 rounded-2xl inline-block">
-                        <Truck className="w-8 h-8 text-yetore-blue-800" />
-                      </div>
-                      <h3 className="font-display font-black text-lg text-yetore-blue-950">
-                        Yétoré Transit & Logistique
+                      <h3 className="font-display font-black text-lg text-yetore-blue-950 tracking-wide">
+                        YETORE TRANSIT-LOGISTIQUE
                       </h3>
                       <p className="text-xs text-gray-600 leading-relaxed">
                         Commissionnaire agréé en douanes. Prise en charge de vos importations et exportations de marchandises depuis les ports de Cotonou, Lomé et Abidjan jusqu’à Niamey.
@@ -268,10 +236,42 @@ export default function App() {
                     <div className="pt-6 border-t border-gray-100 mt-6">
                       <button
                         onClick={() => handleCTA('transit')}
-                        className="w-full py-3 rounded-xl bg-slate-100 hover:bg-yetore-blue-50 hover:text-yetore-blue-800 text-gray-700 text-xs font-bold flex items-center justify-center gap-1.5 cursor-pointer"
+                        className="w-full py-3 rounded-xl bg-yetore-blue-800 hover:bg-yetore-blue-900 text-white text-xs font-bold shadow-md flex items-center justify-center gap-1.5 cursor-pointer"
                         id="portal-transit-btn"
                       >
                         Consulter la division Transit
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* School Division Card */}
+                  <div className="bg-white rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div className="space-y-4">
+                      <div className="p-3.5 bg-slate-100 text-gray-700 rounded-2xl inline-block">
+                        <GraduationCap className="w-8 h-8 text-yetore-blue-800" />
+                      </div>
+                      <h3 className="font-display font-black text-lg text-yetore-blue-950">
+                        CSP YETTORE
+                      </h3>
+                      <p className="text-xs text-gray-600 leading-relaxed">
+                        Maternelle, Primaire, Collège et Lycée Scientifique. Un cadre d'enseignement moderne offrant un programme bilingue (français/anglais), de l’initiation informatique (coding) et une cantine saine.
+                      </p>
+                      
+                      <ul className="space-y-1.5 pt-2 text-[11px] text-gray-500 font-medium">
+                        <li className="flex items-center gap-1.5">✓ Taux de succès remarquable (98% BAC, 100% BEPC)</li>
+                        <li className="flex items-center gap-1.5">✓ Transport par bus climatisés sur la Rive Droite</li>
+                        <li className="flex items-center gap-1.5">✓ Activités extra-scolaires (Coding, Échecs, Sports)</li>
+                      </ul>
+                    </div>
+
+                    <div className="pt-6 border-t border-gray-100 mt-6">
+                      <button
+                        onClick={() => handleCTA('scolaire')}
+                        className="w-full py-3 rounded-xl bg-slate-100 hover:bg-yetore-blue-50 hover:text-yetore-blue-800 text-gray-700 text-xs font-bold flex items-center justify-center gap-1.5 cursor-pointer"
+                        id="portal-scolaire-btn"
+                      >
+                        Accéder au Portail Scolaire
                         <ArrowRight className="w-3.5 h-3.5" />
                       </button>
                     </div>
