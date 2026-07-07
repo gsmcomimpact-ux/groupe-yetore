@@ -210,13 +210,13 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yetore-blue-100 text-yetore-blue-800 text-xs font-bold uppercase tracking-wider mb-4">
             <GraduationCap className="w-4 h-4 text-yetore-gold-500" />
-            COMPLEXE SCOLAIRE D'EXCELLENCE
+            COMPLEXE SCOLAIRE PRIVÉ YÉTORÉ
           </div>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-yetore-blue-900 leading-tight mb-4">
             Former les Générations de Demain sur la <span className="text-transparent bg-clip-text bg-gradient-to-r from-yetore-blue-800 to-yetore-gold-600">Rive Droite</span> de Niamey
           </h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            Le Groupe Scolaire Yétoré offre un cadre académique exceptionnel, combinant rigueur scientifique, bilinguisme précoce et éducation civique, pour guider vos enfants de la petite enfance vers l'élite universitaire.
+            Le Complexe Scolaire Privé Yétoré offre un cadre académique exceptionnel, combinant rigueur scientifique, bilinguisme précoce et éducation civique, pour guider vos enfants de la petite enfance vers l'élite universitaire.
           </p>
         </div>
 
@@ -498,7 +498,7 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
                 Proposez-vous des réductions de frais pour plusieurs enfants ?
               </h4>
               <p className="text-xs text-gray-600 leading-relaxed">
-                Oui. Le Groupe Scolaire Yétoré applique une politique de solidarité familiale : réduction de <strong>10%</strong> sur la scolarité du 2ème enfant inscrit, et <strong>15%</strong> à partir du 3ème enfant.
+                Oui. Le Complexe Scolaire Privé Yétoré applique une politique de solidarité familiale : réduction de <strong>10%</strong> sur la scolarité du 2ème enfant inscrit, et <strong>15%</strong> à partir du 3ème enfant.
               </p>
             </div>
 
@@ -531,7 +531,7 @@ export default function ScolaireSection({ schoolHeroImage }: ScolaireSectionProp
                   <GraduationCap className="w-6 h-6 text-yetore-gold-500" />
                   <div>
                     <h3 className="font-display font-bold text-base sm:text-lg">Portail d'Inscription en Ligne</h3>
-                    <p className="text-[11px] text-yetore-blue-200">Complexe Scolaire Yétoré - Session 2026-2027</p>
+                    <p className="text-[11px] text-yetore-blue-200">Complexe Scolaire Privé Yétoré - Session 2026-2027</p>
                   </div>
                 </div>
                 <button 

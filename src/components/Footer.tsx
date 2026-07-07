@@ -79,7 +79,7 @@ export default function Footer({ setActiveSection }: FooterProps) {
                   className="hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer text-left"
                 >
                   <ChevronRight className="w-3.5 h-3.5 text-yetore-gold-500" />
-                  Complexe Scolaire d'Excellence
+                  Complexe Scolaire Privé Yétoré
                 </button>
               </li>
               <li>
@@ -117,21 +117,39 @@ export default function Footer({ setActiveSection }: FooterProps) {
             <h4 className="text-xs font-extrabold uppercase tracking-widest text-yetore-gold-500 font-mono">
               Nous Rejoindre
             </h4>
-            <div className="space-y-3 text-xs text-yetore-blue-200">
-              <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-yetore-gold-500 shrink-0 mt-0.5" />
-                <span>Complexe Scolaire Yétoré, Route de Say (800m après l'Hôpital), Rive Droite, Niamey, Niger.</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <Phone className="w-4 h-4 text-yetore-gold-500 shrink-0 mt-0.5" />
-                <div>
-                  <span className="block">Scolaire : +227 96 45 44 44</span>
-                  <span className="block mt-0.5">Transit & Assurances : +227 80 12 12 12</span>
+            <div className="space-y-4 text-xs text-yetore-blue-200">
+              {/* Ecole info */}
+              <div className="space-y-1">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-white block">Complexe Scolaire Privé Yétoré</span>
+                <div className="flex items-start gap-2 text-yetore-blue-200 text-[11px]">
+                  <MapPin className="w-3.5 h-3.5 text-yetore-gold-500 shrink-0 mt-0.5" />
+                  <span>Koutéré, Plateau, Niamey, Niger</span>
+                </div>
+                <div className="flex items-start gap-2 text-yetore-blue-200 text-[11px]">
+                  <Phone className="w-3.5 h-3.5 text-yetore-gold-500 shrink-0 mt-0.5" />
+                  <span>+227 96 82 06 12 / 93 82 22 82</span>
+                </div>
+                <div className="flex items-start gap-2 text-yetore-blue-200 text-[11px]">
+                  <Mail className="w-3.5 h-3.5 text-yetore-gold-500 shrink-0 mt-0.5" />
+                  <span>cspyetore21@gmail.com</span>
                 </div>
               </div>
-              <div className="flex items-start gap-2">
-                <Mail className="w-4 h-4 text-yetore-gold-500 shrink-0 mt-0.5" />
-                <span>contact@yetore-groupe.com</span>
+
+              {/* Transit info */}
+              <div className="space-y-1 pt-2 border-t border-yetore-blue-800">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-white block">Yétoré Transit & Assurances</span>
+                <div className="flex items-start gap-2 text-yetore-blue-200 text-[11px]">
+                  <MapPin className="w-3.5 h-3.5 text-yetore-gold-500 shrink-0 mt-0.5" />
+                  <span>Banga Bana, Immeuble YTT, Niamey</span>
+                </div>
+                <div className="flex items-start gap-2 text-yetore-blue-200 text-[11px]">
+                  <Phone className="w-3.5 h-3.5 text-yetore-gold-500 shrink-0 mt-0.5" />
+                  <span>+227 20 31 57 85 / 96 45 20 90</span>
+                </div>
+                <div className="flex items-start gap-2 text-yetore-blue-200 text-[11px]">
+                  <Mail className="w-3.5 h-3.5 text-yetore-gold-500 shrink-0 mt-0.5" />
+                  <span>yetoretransit14@gmail.com</span>
+                </div>
               </div>
             </div>
           </div>

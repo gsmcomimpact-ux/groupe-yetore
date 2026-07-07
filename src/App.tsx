@@ -45,7 +45,7 @@ export default function App() {
     {
       name: "Elhadj Soumana Oumarou",
       role: "Parent d'élèves (Lamordé)",
-      comment: "Inscrire mes deux enfants au Complexe Scolaire Yétoré est le meilleur choix que j'ai fait. Le programme bilingue est d'une grande rigueur, et le service de minibus climatisés évite à nos enfants la fatigue du trajet quotidien à travers le fleuve.",
+      comment: "Inscrire mes deux enfants au Complexe Scolaire Privé Yétoré est le meilleur choix que j'ai fait. Le programme bilingue est d'une grande rigueur, et le service de minibus climatisés évite à nos enfants la fatigue du trajet quotidien à travers le fleuve.",
       stars: 5
     },
     {
@@ -96,7 +96,7 @@ export default function App() {
                       Rentré Académique 2026-2027
                     </span>
                     <p className="font-semibold leading-relaxed">
-                      Inscriptions ouvertes au Complexe Scolaire Yétoré (Maternelle, Primaire, Collège, Lycée) à la Rive Droite de Niamey. Réservez une place en ligne dès aujourd'hui !
+                      Inscriptions ouvertes au Complexe Scolaire Privé Yétoré (Maternelle, Primaire, Collège, Lycée) à la Rive Droite de Niamey. Réservez une place en ligne dès aujourd'hui !
                     </p>
                   </div>
                   <button 
@@ -220,7 +220,7 @@ export default function App() {
                         <GraduationCap className="w-8 h-8 text-yetore-gold-500" />
                       </div>
                       <h3 className="font-display font-black text-lg text-yetore-blue-950">
-                        Complexe Scolaire d’Élite Yétoré
+                        Complexe Scolaire Privé Yétoré
                       </h3>
                       <p className="text-xs text-gray-600 leading-relaxed">
                         Maternelle, Primaire, Collège et Lycée Scientifique. Un cadre d'enseignement moderne offrant un programme bilingue (français/anglais), de l’initiation informatique (coding) et une cantine saine.

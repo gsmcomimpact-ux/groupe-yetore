@@ -40,7 +40,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
 
   const navItems = [
     { id: 'home' as SectionType, label: 'Accueil', icon: Building },
-    { id: 'scolaire' as SectionType, label: 'Groupe Scolaire', icon: GraduationCap, highlight: true },
+    { id: 'scolaire' as SectionType, label: 'Complexe Scolaire', icon: GraduationCap, highlight: true },
     { id: 'transit' as SectionType, label: 'Transit & Logistique', icon: Truck },
     { id: 'assurances' as SectionType, label: 'Assurances', icon: ShieldCheck },
     { id: 'propos' as SectionType, label: 'À Propos', icon: Info },
@@ -209,10 +209,13 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
               {/* Extra info/contact details in drawer */}
               <div className="mt-6 pt-5 border-t border-gray-100 px-4 text-center">
                 <p className="text-[11px] text-gray-500 font-medium">
-                  📍 Rive Droite, Niamey, Niger
+                  📍 Niamey, Niger
                 </p>
                 <p className="text-[11px] text-yetore-blue-800 font-bold mt-1">
-                  📞 +227 96 45 44 44 / +227 80 12 12 12
+                  📞 Scolaire : +227 96 82 06 12
+                </p>
+                <p className="text-[11px] text-yetore-blue-800 font-bold mt-0.5">
+                  📞 Transit : +227 20 31 57 85
                 </p>
               </div>
             </div>

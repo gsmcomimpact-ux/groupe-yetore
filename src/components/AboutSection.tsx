@@ -72,7 +72,7 @@ export default function AboutSection() {
               Un Engagement Global pour le Développement du Niger
             </h2>
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-              Le <strong>Groupe Yétoré</strong> est né d'une volonté simple : bâtir un écosystème de services de premier plan sur la <strong>Rive Droite de Niamey</strong>. Convaincus que le développement socioéconomique d’un pays repose sur deux piliers — une éducation de classe mondiale pour sa jeunesse et des flux logistiques performants pour ses entreprises — nous avons réuni sous un même label le Complexe Scolaire d’excellence, l'agence agréée de transit, et le cabinet de conseil en assurances.
+              Le <strong>Groupe Yétoré</strong>, fondé par <strong>M. AMADOU SOUMANA</strong>, est né d'une volonté simple : bâtir un écosystème de services de premier plan sur la <strong>Rive Droite de Niamey</strong>. Convaincus que le développement socioéconomique d’un pays repose sur deux piliers — une éducation de classe mondiale pour sa jeunesse et des flux logistiques performants pour ses entreprises — le fondateur a réuni sous un même label le Complexe Scolaire d’excellence, l'agence agréée de transit, et le cabinet de conseil en assurances.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -92,7 +92,7 @@ export default function AboutSection() {
                   <h4 className="text-xs font-extrabold uppercase font-mono tracking-wider">Notre Vision</h4>
                 </div>
                 <p className="text-xs text-gray-500 leading-relaxed">
-                  Devenir le groupe multiservice de référence à Niamey, reconnu pour la réussite à 100% de ses bacheliers et l’intégrité sans faille de sa chaîne de transit.
+                  Sous l'impulsion de son fondateur <strong>M. AMADOU SOUMANA</strong>, notre vision est de devenir le groupe multiservice de référence à Niamey, reconnu pour la réussite à 100% de ses bacheliers et l’intégrité sans faille de sa chaîne de transit et assurances.
                 </p>
               </div>
             </div>
