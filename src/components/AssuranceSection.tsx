@@ -27,7 +27,7 @@ export default function AssuranceSection({ insuranceImage }: AssuranceSectionPro
       title: 'Assurance Automobile & Moto',
       description: 'Protégez votre véhicule et vos passagers sur les routes de Niamey. Responsabilité civile obligatoire, défense et recours, bris de glace, ou formule tous risques.',
       icon: Car,
-      color: 'bg-blue-50 text-blue-800'
+      color: 'bg-emerald-50 text-emerald-800'
     },
     {
       type: 'sante',
